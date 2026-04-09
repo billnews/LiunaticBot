@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "Competing on the ice | 2x Gold Medallist",
         // Activity type number (0 = Playing).
-        type: 0, 
+        type: 5, 
       },
     ],
   },
@@ -38,7 +38,7 @@ export const botConfig = {
   commands: {
     // Bot owner user IDs (comma-separated in OWNER_IDS env var).
     // Owners can access owner/admin-level bot commands.
-    owners: process.env.OWNER_IDS?.split(",") || [],
+    owners: process.env.OWNER_IDS?.split(",") || [803179167025201152],
 
     // Default wait time between command uses (in seconds).
     defaultCooldown: 3, 
@@ -78,7 +78,7 @@ export const botConfig = {
     deleteApprovedAfter: 30, 
 
     // Role IDs allowed to manage applications.
-    managerRoles: [], // Will be populated from environment or database
+    managerRoles: [803179167025201152, 702057223420903485], // Will be populated from environment or database
   },
 
   // =========================
@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Liunatic #2",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -156,11 +156,11 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Lysium",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Lysiums",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "ℒ",
     },
 
     // Starting balance for new users.
@@ -181,7 +181,7 @@ export const botConfig = {
     begMax: 50,
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.3,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
@@ -204,7 +204,7 @@ export const botConfig = {
     defaultCategory: null,
 
     // Role IDs allowed to manage/support tickets.
-    supportRoles: [],
+    supportRoles: [1475408222327275560],
 
     // Priority options users/staff can assign.
     priorities: {
@@ -242,7 +242,7 @@ export const botConfig = {
     archiveCategory: null,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: [8475224236410011758],
   },
 
   // =========================
@@ -264,7 +264,7 @@ export const botConfig = {
     maximumDuration: 2592000000, 
 
     // Role IDs allowed to host giveaways.
-    allowedRoles: [],
+    allowedRoles: [1475408222327275560],
 
     // Role IDs that bypass giveaway restrictions.
     bypassRoles: [],
@@ -275,10 +275,10 @@ export const botConfig = {
   // =========================
   birthday: {
     // Role ID given to users on their birthday.
-    defaultRole: null,
+    defaultRole: [1491769956101259444],
 
     // Channel ID where birthday announcements are posted.
-    announcementChannel: null,
+    announcementChannel: [1475216019265032494],
 
     // Timezone used to calculate birthday dates.
     timezone: "UTC",
@@ -449,8 +449,8 @@ export const botConfig = {
     counter: true,
 
     // Security and self-service systems.
-    verification: true,
-    reactionRoles: true,
+    verification: false,
+    reactionRoles: false,
     joinToCreate: true,
 
     // Utility/quality-of-life modules.
