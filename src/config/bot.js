@@ -25,9 +25,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Competing on the ice | 2x Gold Medallist",
+        name: "Watching SOI or /help | brought to you by server boosters Jane, Rae, lily, Slava and Vasa",
         // Activity type number (0 = Playing).
-        type: 5, 
+        type: 3, 
       },
     ],
   },
@@ -56,9 +56,9 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "Name your moderation experience?", required: true },
+      { question: "How do you deal with weird coments about alysa liu?", required: true },
+      { question: "What is the quickest way to completely lockdown the server bc of raiders", required: true },
     ],
 
     // Embed colors by application status.
